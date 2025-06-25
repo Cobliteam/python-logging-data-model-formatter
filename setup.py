@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="cobli-logging-formatter",
-    version="1.0.0",
+    version="1.0.1",
     author="Cobli",
     description="A structured JSON logging formatter with Datadog integration for Python applications",
     long_description=long_description,

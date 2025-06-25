@@ -48,10 +48,10 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/your-company/cobli-logging-formatter"
-Documentation = "https://github.com/your-company/cobli-logging-formatter#readme"
-Repository = "https://github.com/your-company/cobli-logging-formatter.git"
-Issues = "https://github.com/your-company/cobli-logging-formatter/issues"
+Homepage = "https://github.com/Cobliteam/cobli-logging-formatter"
+Documentation = "https://github.com/Cobliteam/cobli-logging-formatter#readme"
+Repository = "https://github.com/Cobliteam/cobli-logging-formatter.git"
+Issues = "https://github.com/Cobliteam/cobli-logging-formatter/issues"
 
 [tool.hatch.version]
 path = "cobli_logging/__init__.py"
