@@ -1,0 +1,6 @@
+# Cooldown: uv refuses to resolve a version published less than 7 days ago
+# when it locks this project. uv.lock records the window as a span, so the lock
+# does not go stale as days pass. The floor is the first uv release that reads
+# a relative duration here.
+required-version = ">=0.9.17"
+exclude-newer = "7 days"
