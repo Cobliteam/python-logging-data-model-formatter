@@ -129,3 +129,12 @@ dev = [
     "pytest-cov>=5.0.0",
     "twine>=6.1.0",
 ]
+
+[tool.uv]
+# Cooldown: uv ignores any file uploaded to the index less than 7 days ago
+# when it locks this project. uv.lock records the window as a span, so the
+# lock does not go stale as days pass. The floor is the first uv release that
+# reads a relative duration; older releases drop this whole table, so install
+# with --locked, which they fail.
+required-version = ">=0.9.17"
+exclude-newer = "7 days"
