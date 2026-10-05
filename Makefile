@@ -59,11 +59,11 @@ help: ## Show this help message
 
 install: ## Install production dependencies only
 	@echo "$(YELLOW)Installing production dependencies...$(RESET)"
-	uv sync --no-dev
+	uv sync --locked --no-dev
 
 dev-install: ## Install all dependencies including development tools
 	@echo "$(YELLOW)Installing development dependencies...$(RESET)"
-	uv sync --dev
+	uv sync --locked --dev
 
 clean: ## Remove build artifacts and cache files
 	@echo "$(YELLOW)Cleaning build artifacts...$(RESET)"
